@@ -18,7 +18,7 @@ class ReserveSeatRequest extends FormRequest
             'from' => 'required | int | exists:stations,id',
             'to' => 'required | int | exists:stations,id',
             'bus' => 'required | int | exists:buses,id',
-            'seat' => 'required | int | exists:buses,id',
+            'seat' => 'required | int | exists:bus_seats,id',
         ];
     }
 
